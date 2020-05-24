@@ -7,7 +7,7 @@
     "build": "yarn build-server && yarn build-client",
     "build-server": "cd server && yarn && yarn build && yarn run client",
     "build-client": "cd client && yarn && yarn build",
-    "start": "npm run build && node server/build/index.js"
+    "start": "node server/build/index.js"
   },
   "author": "",
   "license": "ISC",
