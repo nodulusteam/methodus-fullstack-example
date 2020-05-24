@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --all -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
     "open": "call start http://localhost:6695/",
     "start": "tsc &&  node build/index.js",
     "contract": "contracts-server ./build.json",
