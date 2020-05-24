@@ -1,0 +1,24 @@
+{
+  "name": "methodus-fullstack-application",
+  "version": "1.0.0",
+  "description": "Angular application with a Methodus server back-end, using code contracts.",
+  "main": "server/build/index.js",
+  "scripts": {
+    "build": "yarn build-server && yarn build-client",
+    "build-server": "cd server && yarn && yarn build && yarn run client",
+    "build-client": "cd client && yarn && yarn build",
+    "start": "npm run build && node server/build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "7.3.9",
+    "@methodus/contracts": "6.0.7",
+    "@types/node": "^12.0.0",
+    "typescript": "^3.5.1"
+  },
+  "peerDependencies": {
+    "typescript": "^3.4.0"
+  },
+  "keywords": []
+}
